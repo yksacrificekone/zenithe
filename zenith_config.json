@@ -1,0 +1,80 @@
+{
+  "app": {
+    "name": "ZENITH",
+    "version": "1.0.0",
+    "tagline": "APEX. AUTOMATED. ABSOLUTE.",
+    "debug": false,
+    "log_path": "logs/zenith.log",
+    "update_url": ""
+  },
+  "ui": {
+    "theme": "ZENITH DEFAULT",
+    "font": "JetBrains Mono",
+    "font_size": 13,
+    "ui_scale": 1.0,
+    "sidebar_mode": "icons_labels",
+    "animation_speed": "normal",
+    "colors": {
+      "background": "#0A0A0F",
+      "accent": "#00F5FF",
+      "danger": "#FF2244",
+      "card": "#13131A",
+      "text": "#E8E8F0",
+      "subtext": "#6B6B80",
+      "success": "#00FF88",
+      "warning": "#FFB800",
+      "border": "#1E1E2E"
+    }
+  },
+  "behavior": {
+    "default_thread_count": 5,
+    "default_delay_min": 500,
+    "default_delay_max": 2000,
+    "auto_pause_on_errors": true,
+    "auto_pause_threshold": 10,
+    "minimize_to_tray": false,
+    "start_minimized": false,
+    "auto_start_last_session": false
+  },
+  "notifications": {
+    "desktop_toasts": true,
+    "sound_alerts": false,
+    "sound_volume": 0.5,
+    "alert_on_module_complete": true,
+    "alert_on_error_threshold": true,
+    "alert_on_proxy_depleted": true,
+    "alert_on_token_invalidated": true,
+    "alert_on_captcha_required": false,
+    "webhook_url": ""
+  },
+  "security": {
+    "app_lock_pin": "",
+    "auto_lock_enabled": false,
+    "auto_lock_minutes": 15,
+    "encrypt_tokens": true,
+    "colorblind_mode": false
+  },
+  "advanced": {
+    "max_threads_global": 50,
+    "request_timeout_default": 30,
+    "log_max_size_mb": 10,
+    "log_keep_files": 5,
+    "user_agent_pool_size": 200
+  },
+  "captcha": {
+    "solver": "2captcha",
+    "api_keys": {
+      "2captcha": "",
+      "capmonster": "",
+      "anticaptcha": "",
+      "deathbycaptcha": ""
+    },
+    "timeout": 60,
+    "priority": ["2captcha", "capmonster", "anticaptcha"]
+  },
+  "proxies": {
+    "global_pool": [],
+    "rotation_strategy": "round_robin",
+    "auto_remove_dead": true
+  }
+}
